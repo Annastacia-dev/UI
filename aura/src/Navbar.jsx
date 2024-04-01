@@ -1,29 +1,20 @@
 import { useState } from 'react';
 import { HiOutlineMenuAlt2 } from 'react-icons/hi';
+import { IoSearch } from "react-icons/io5";
+import { BiSolidUser } from "react-icons/bi";
+import { GiShoppingBag } from "react-icons/gi";
 import MobileNavbar from './MobileNavbar';
-import { MdEmail, MdHeadphones } from 'react-icons/md';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-  const handlePhone = () => {
-    window.open('tel:+254768372439');
-  };
-
   return (
-    <nav className="absolute flex justify-between items-center z-10 ml-10 mt-10 sm:w-10/12 w-8/12 border-t pt-4 text-white">
-      <div className="flex items-center gap-2 hover:-translate-y-1">
-        <img
-          src="/logo.png"
-          width={24}
-          height={28}
-          alt="webcafe africa logo"
-          className="sm:w-6 w-4 sm:h-6 h-4 animate-spin"
-        />
+    <nav className="absolute flex justify-between items-center z-10 px-5 py-2 border border-black pt-4 mt-3 ml-10 w-11/12 bg-black/60 text-white ">
+      <div className="flex items-center gap-2">
         <a
           href="/"
-          className="font-bold font-quicksand uppercase transition duration-500 ease-in-out transform sm:text-base text-sm"
+          className="font-playfair transition duration-500 ease-in-out transform text-xl font-bold"
         >
           aura
         </a>
@@ -31,42 +22,42 @@ const Navbar = () => {
       <div className="absolute right-0 md:hidden">
         {!isOpen && <HiOutlineMenuAlt2 className="text-xl" onClick={toggle} />}
       </div>
-      <ul className="hidden md:flex gap-6 p-2 font-normal text-sm uppercase">
+      <ul className="hidden md:flex gap-6 p-2 font-normal text-sm capitalize">
         <li>
           <a aria-label="home" href="/" className="hover:underline">
-            Home
+            our story
           </a>
         </li>
         <li>
           <a
-            aria-label="portfolio"
-            href="/portfolio"
+            aria-label="products"
+            href="#products"
             className="hover:underline"
           >
-            Portfolio
+            products
+          </a>
+        </li>
+        <li>
+          <a
+            aria-label="blog"
+            href="#blog"
+            className="hover:underline"
+          >
+            blog
           </a>
         </li>
       </ul>
-      <ul className="gap-3 text-2xl sm:flex hidden">
+      <ul className="gap-3 text- sm:flex hidden">
         <li>
-          <a
-            aria-label="email"
-            href="mailto:info@webcafe.africa"
-            className="hover:underline"
-          >
-            <MdEmail />
-          </a>
+          <IoSearch />
         </li>
+        <span className="border-r border-white h-5"></span>
         <li>
-          <button
-            role="button"
-            aria-label="phone"
-            aria-labelledby="phone"
-            onClick={handlePhone}
-            className="hover:underline"
-          >
-            <MdHeadphones />
-          </button>
+          <BiSolidUser />
+        </li>
+        <span className="border-r border-white h-5"></span>
+        <li>
+          <GiShoppingBag />
         </li>
       </ul>
       <MobileNavbar isOpen={isOpen} toggle={toggle} />

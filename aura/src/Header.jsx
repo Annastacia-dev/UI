@@ -7,7 +7,7 @@ const Header = () => {
     style={{
       backgroundImage: `url('background.jpg')`,
     }}
-  >
+   >
     </header>
   )
 }
