@@ -6,7 +6,7 @@ import { products } from './data/products';
 const BestPicks = () => {
   return (
     <div className="bg-gray-50 py-10 px-5">
-      <div class="flex flex-col gap-2">
+      <div className="flex flex-col gap-2">
         <h5 className="font-playfair font-bold capitalize text-xl">
           best picks
         </h5>
@@ -23,11 +23,13 @@ const BestPicks = () => {
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
         {products.slice(0, 4).map((product) => (
           <div class="bg-white border p-1 rounded shadow-md">
-            <img
-              src={product.image}
-              alt={product.title}
-              class="w-full h-40 object-cover"
-            />
+            <div class="h-40 w-full">
+              <img
+                src={product.image}
+                alt={product.title}
+                class="h-40 w-full object-cover hover:scale-105 transition duration-300 ease-in-out"
+              />
+            </div>
             <h5 class="text-sm font-semibold mt-3 px-2">{product.title}</h5>
             <div class="flex justify-between items-center mt-3 px-2">
               <p class="text-gray-500 text-xs mt-1">

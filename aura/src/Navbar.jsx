@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
 
         <ul className="hidden md:flex gap-6 p-2  text-sm capitalize font-semibold">
-          <li className='hover:text-white cursor-pointer'>
+          <li className="hover:text-white cursor-pointer">
             <a
               aria-label="home"
               href="/"
@@ -32,7 +32,7 @@ const Navbar = () => {
               our story
             </a>
           </li>
-          <li className='hover:text-white cursor-pointer'>
+          <li className="hover:text-white cursor-pointer">
             <a
               aria-label="products"
               href="#products"
@@ -41,7 +41,7 @@ const Navbar = () => {
               products
             </a>
           </li>
-          <li className='hover:text-white cursor-pointer'>
+          <li className="hover:text-white cursor-pointer">
             <a
               aria-label="blog"
               href="#blog"
@@ -62,15 +62,15 @@ const Navbar = () => {
         </div>
 
         <ul className="gap-3 sm:flex hidden">
-          <li className='hover:text-white cursor-pointer'>
+          <li className="hover:text-white cursor-pointer">
             <IoSearch />
           </li>
           <span className="border-r border-tan h-5"></span>
-          <li className='hover:text-white cursor-pointer'>
+          <li className="hover:text-white cursor-pointer">
             <BiSolidUser />
           </li>
           <span className="border-r border-tan h-5"></span>
-          <li className='hover:text-white cursor-pointer'>
+          <li className="hover:text-white cursor-pointer">
             <GiShoppingBag />
           </li>
         </ul>
