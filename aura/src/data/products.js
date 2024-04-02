@@ -61,4 +61,31 @@ export const products = [
     price: 20,
     image: 'products/eyecream.jpeg',
   },
+  {
+    id: 8,
+    title: 'Sunscreen',
+    description:
+      'This sunscreen is perfect for protecting your skin from harmful UV rays.',
+    rating: 4.5,
+    price: 15,
+    image: 'products/sunscreen.jpeg',
+  },
+  {
+    id: 9,
+    title: 'Lip Balm',
+    description:
+      'This lip balm is perfect for keeping your lips hydrated and moisturized.',
+    rating: 4.0,
+    price: 10,
+    image: 'products/lipbalm.jpeg',
+  },
+  {
+    id: 10,
+    title: 'Hand Cream',
+    description:
+      'This hand cream is perfect for keeping your hands soft and moisturized.',
+    rating: 4.0,
+    price: 10,
+    image: 'products/handcream.jpeg',
+  },
 ];

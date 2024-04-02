@@ -7,8 +7,8 @@ const MobileNavbar = ({ isOpen, toggle }) => {
         <ul className="flex flex-col gap-4">
           <li>
             <a
-              aria-label="home"
-              href="/"
+              aria-label="ourstory"
+              href="#story"
               className="hover:underline cursor-pointer"
             >
               our story

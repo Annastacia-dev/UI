@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="absolute flex justify-between items-center z-10 px-10 py-1 border border-khaki w-full bg-black/80 text-tan">
+      <nav className="md:absolute fixed flex justify-between items-center z-10 px-10 py-1 border border-khaki w-full bg-black/80 text-tan">
         <div className="absolute right-10 md:hidden">
           {!isOpen ? (
             <HiOutlineMenuAlt2 className="text-xl" onClick={toggle} />
@@ -25,8 +25,8 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-6 p-2  text-sm capitalize font-semibold">
           <li className="hover:text-white cursor-pointer">
             <a
-              aria-label="home"
-              href="/"
+              aria-label="our story"
+              href="#story"
               className="hover:underline hover:text-white cursor-pointer"
             >
               our story

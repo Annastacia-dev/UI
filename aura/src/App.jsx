@@ -2,6 +2,7 @@ import Navbar from './Navbar';
 import Header from './Header';
 import BestPicks from './BestPicks';
 import OurStory from './OurStory';
+import AllProducts from './AllProducts';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <BestPicks />
       <OurStory />
+      <AllProducts />
     </>
   );
 }

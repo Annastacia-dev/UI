@@ -2,15 +2,15 @@ import React from 'react';
 
 const OurStory = () => {
   return (
-    <div className="bg-gray-50 py-10 px-5">
+    <div className="bg-gray-50 py-10 px-5" id="story">
       <div className="flex flex-col gap-2">
         <h5 className="font-playfair font-bold capitalize text-xl">
           our story
         </h5>
       </div>
-      <div className="relative flex flex-col justify-center  mt-20">
-        <h5 className="font-playfair text-2xl ml-60 mb-6">
-          holistic beauty & wellness
+      <div className="relative flex flex-col justify-center  md:mt-20 mt-10">
+        <h5 className="font-playfair text-2xl md:ml-60 ml-0 mb-6">
+          holistic beauty and wellness
           <br />
           unveil your natural beauty
         </h5>
@@ -24,15 +24,15 @@ const OurStory = () => {
             <img
               src="imagetwo.jpeg"
               alt="our story"
-              className="w-1/4 h-96 object-cover mt-2"
+              className="w-1/4 h-96 object-cover mt-2 md:flex hidden"
             />
             <img
               src="imagethree.jpeg"
               alt="our story"
-              className="w-1/2 h-96 object-cover mt-10"
+              className="w-1/2 h-96 object-cover mt-10 "
             />
           </div>
-          <p className="text-sm mt-5 leading-relaxed ml-24">
+          <p className="text-sm mt-5 leading-relaxed md:ml-24 ml-0">
             We believe that beauty is more than skin deep. Our products are
             designed to help you feel good and look good. We use only the best
             ingredients to create products that are safe, effective, and

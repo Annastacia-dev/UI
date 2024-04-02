@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
-
 import { products } from './data/products';
 
 const BestPicks = () => {
@@ -43,12 +42,12 @@ const BestPicks = () => {
                 </span>
               </p>
             </div>
-            <div className="px-2">
-              <button class="border border-black text-sm font-bold uppercase  mt-3 mb-2 w-full relative flex justify-between">
-                <p className="px-4 py-2 ml-8 "> add to bag</p>
-                <span class="px-3 py-2 absolute right-2 border-l border-black">
-                  + ${product.price}
-                </span>
+            <div className="px-2 flex items-center">
+              <button class="border border-black text-sm font-bold uppercase  mt-3 mb-2 w-full  px-4 py-2 hover:bg-black hover:text-white">
+                add to bag
+              </button>
+              <button class="border border-l-0 border-black text-sm font-bold uppercase  mt-3 mb-2 w-1/2  px-4 py-2">
+                ${product.price}
               </button>
             </div>
           </div>
