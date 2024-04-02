@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProductCategories = () => {
   return (
-    <ul className='flex md:flex-row flex-col gap-6 md:p-2 text-xs uppercase font-normal'>
+    <ul className="flex md:flex-row flex-col gap-6 md:p-2 text-xs uppercase font-normal">
       <li>
         <a
           aria-label="serums"

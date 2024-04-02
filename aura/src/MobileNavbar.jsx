@@ -1,4 +1,4 @@
-import ProductCategories from "./ProductCategories";
+import ProductCategories from './ProductCategories';
 
 const MobileNavbar = ({ isOpen, toggle }) => {
   return (
