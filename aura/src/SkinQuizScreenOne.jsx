@@ -5,7 +5,7 @@ const SkinQuizScreenOne = ({ activeScreen, setActiveScreen }) => {
 
   return (
     <div
-      className={`sm:h-[500px] h-[600px] bg-white shadow-lg p-5 ${activeScreen === 1 ? 'scale-105 border border-black' : ''}`}
+      className={`sm:h-[500px] h-[600px] bg-white shadow-lg p-5 ${activeScreen === 1 ? 'sm:scale-105 scale-95 border border-black' : ''}`}
     >
       <div className="flex gap-4 items-center">
         <div className="flex  bg-black text-tan rounded-full h-6 w-6 items-center justify-center text-xs">

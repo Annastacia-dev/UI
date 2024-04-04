@@ -22,7 +22,7 @@ const SkinQuiz = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 md:gap-12 gap-10 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-4 md:gap-12 gap-10 mt-10 p-5">
         <SkinQuizScreenOne
           setActiveScreen={setActiveScreen}
           activeScreen={activeScreen}
