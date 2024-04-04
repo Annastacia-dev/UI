@@ -9,7 +9,7 @@ const SkinQuiz = () => {
   const [activeScreen, setActiveScreen] = useState(1);
 
   return (
-    <div className="bg-tan/20 py-16 sm:px-5 px-2">
+    <div className="bg-tan/20 py-16 sm:px-5 px-2" id="skinquiz">
       <div className="flex flex-col gap-2">
         <h5 className="font-playfair font-bold capitalize text-xl">
           Discover Your Ideal Skincare Routine
@@ -59,7 +59,20 @@ const SkinQuiz = () => {
           </p>
 
           <p className="text-sm text-left">
-            Add everything as a bundle and save 10%
+            Aloe vera is a great ingredient for oily skin. It has anti-inflammatory and
+            antimicrobial properties that can help reduce acne and soothe the skin.
+
+            Charcoal is another great ingredient for oily skin. It can help absorb excess
+            oil and impurities from the skin, leaving it feeling clean and refreshed.
+
+            Salicylic acid is a beta hydroxy acid that can help exfoliate the skin and
+            unclog pores. It is great for oily and acne-prone skin types.
+
+            <br />
+            <br />
+            These products are designed to help you achieve your skincare goals and
+            maintain healthy, balanced skin. We recommend incorporating them into your
+            daily skincare routine for best results.
           </p>
 
         </div>

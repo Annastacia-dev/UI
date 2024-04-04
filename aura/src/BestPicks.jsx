@@ -13,9 +13,9 @@ const BestPicks = () => {
           <p className="sm:text-sm text-xs text-gray-500">
             Not sure where to start? These are our best picks.
           </p>
-          <p className="text-xs font-bold uppercase hover:underline">
+          <a href="#skinquiz" className="text-xs font-bold uppercase hover:underline">
             personalized skin quiz {'->'}
-          </p>
+          </a>
         </div>
       </div>
 
