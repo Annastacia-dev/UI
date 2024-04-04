@@ -1,6 +1,6 @@
 import ProductCategories from './ProductCategories';
 
-const MobileNavbar = ({ isOpen, toggle }) => {
+const MobileNavbar = ({ isOpen }) => {
   return (
     isOpen && (
       <div className="flex-col flex fixed inset-0 bottom-[15%] bg-black/80 gap-4 px-10 py-8  text-tan capitalize font-bold text-sm mt-[38px]">

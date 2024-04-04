@@ -74,7 +74,7 @@ const Navbar = () => {
             <GiShoppingBag />
           </li>
         </ul>
-        <MobileNavbar isOpen={isOpen} toggle={toggle} />
+        <MobileNavbar isOpen={isOpen} />
       </nav>
 
       <nav className="absolute md:flex hidden justify-between mt-[46px] items-center z-10 px-10 py-1 w-full bg-tan/80 text-black">
