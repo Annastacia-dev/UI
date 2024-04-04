@@ -3,7 +3,6 @@ import { products } from './data/products';
 import Filter from './Filter';
 import { IoFilter } from 'react-icons/io5';
 
-
 const AllProducts = () => {
   const [filterOpen, setFilterOpen] = useState(false);
 

@@ -5,8 +5,10 @@ import { IoCloseSharp } from 'react-icons/io5';
 const Filter = ({ toggle }) => {
   return (
     <div className="flex flex-col text-sm md:absolute  md:mt-0 mt-10">
-
-      <IoCloseSharp className="text-2xl text-tan md:hidden absolute top-3 right-2 cursor-pointer" onClick={toggle} />
+      <IoCloseSharp
+        className="text-2xl text-tan md:hidden absolute top-3 right-2 cursor-pointer"
+        onClick={toggle}
+      />
 
       <div className="flex items-center gap-2">
         <IoFilter className="text-2xl text-tan" />
@@ -20,15 +22,19 @@ const Filter = ({ toggle }) => {
           <div className="flex flex-col gap-1">
             <label>
               <input type="checkbox" className="mr-2" />
-              Skincare
+              Serums
             </label>
             <label>
               <input type="checkbox" className="mr-2" />
-              Wellness
+              Cleansers
             </label>
             <label>
               <input type="checkbox" className="mr-2" />
-              Haircare
+              Exfoliators
+            </label>
+            <label>
+              <input type="checkbox" className="mr-2" />
+              Moisturizers
             </label>
           </div>
         </div>
