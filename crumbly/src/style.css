@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Asgard';
-    src: url('assets/fonts/AsgardTrial-Bold.ttf') format('truetype');
+    font-family: 'coolvetica';
+    src: url('assets/fonts/coolvetica.ttf') format('opentype');
 }
 
 html{

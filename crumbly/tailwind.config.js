@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        asgard: ['Asgard', 'sans-serif'],
+        coolvetica: ['coolvetica', 'sans-serif'],
       },
     },
   },
