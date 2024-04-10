@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#FF6363',
+      },
       fontFamily: {
         coolvetica: ['coolvetica', 'sans-serif'],
       },
