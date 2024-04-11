@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#FF6363',
+        primary: '#4a0236',
       },
       fontFamily: {
         coolvetica: ['coolvetica', 'sans-serif'],
