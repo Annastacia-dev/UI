@@ -11,6 +11,7 @@ export default {
       },
       fontFamily: {
         coolvetica: ['coolvetica', 'sans-serif'],
+        infostory: ['infostory', 'sans-serif'],
       },
     },
   },

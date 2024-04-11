@@ -2,7 +2,7 @@
 </script>
 
 <template>
- <div class="bg-gray-50 grid sm:grid-cols-2 grid-cols-1 gap-5 pt-20 px-10 min-h-screen overflow-clip">
+ <div class="bg-gray-50 grid sm:grid-cols-2 grid-cols-1 gap-5 pt-28 px-10 min-h-screen overflow-clip">
     <div class="flex flex-col gap-5">
       <h1 class="text-5xl leading-tight font-coolvetica tracking-wide">
          handmade,
@@ -16,7 +16,7 @@
       </p>
       <button class="bg-primary text-white py-3 px-6 rounded-full mt-5 sm:w-40">Explore Menu</button>
     </div>
-    <div class="bg-black sm:rounded-l-full sm:-mt-20 sm:-mr-7 overflow-hidden flex justify-center items-center border-[12px] border-primary">
+    <div class="bg-black sm:rounded-l-full sm:-mt-28 sm:-mr-7 overflow-hidden flex justify-center items-center border-[12px] border-primary">
        <video
          class="h-screen w-full object-cover"
          src="https://res.cloudinary.com/dlahz5ciz/video/upload/v1712821455/bakingvideo_ouzxfr.mp4"

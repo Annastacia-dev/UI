@@ -10,6 +10,11 @@
     src: url('assets/fonts/coolvetica.ttf') format('opentype');
 }
 
+@font-face {
+    font-family: infostory;
+    src: url('assets/fonts/infostory.ttf') format('opentype');
+}
+
 html{
     font-family: 'Rubik', sans-serif;
     scroll-behavior: smooth;
