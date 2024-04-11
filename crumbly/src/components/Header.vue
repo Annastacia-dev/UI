@@ -19,7 +19,7 @@
     <div class="bg-black sm:rounded-l-full sm:-mt-20 sm:-mr-7 overflow-hidden flex justify-center items-center border-[12px] border-primary">
        <video
          class="h-screen w-full object-cover"
-         src="/bakingvideo.mp4"
+         src="https://res.cloudinary.com/dlahz5ciz/video/upload/v1712821455/bakingvideo_ouzxfr.mp4"
          autoplay
          loop
          muted
