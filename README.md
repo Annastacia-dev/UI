@@ -9,9 +9,8 @@
 
 ### crumbly
 - Bakery website
-- Vite + Vue + TailwindCSS
--
-
+- Vite + React JS + TailwindCSS
+- https://crumbly.vercel.app
 
 ### vessels
 - Pottery website
