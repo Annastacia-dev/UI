@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#4a0236',
+        primary: '#f3a446',
+        secondary: '#a06235',
+        darkgrey: '#1d1d1d',
+        lightgrey: '#efefef',
       },
       fontFamily: {
         coolvetica: ['coolvetica', 'sans-serif'],

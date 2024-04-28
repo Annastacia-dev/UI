@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="bg-gray-50 grid sm:grid-cols-2 grid-cols-1 gap-5 pt-28 px-10 min-h-screen overflow-clip">
+    <div className="grid sm:grid-cols-2 grid-cols-1 gap-5 pt-32 px-10 min-h-screen overflow-clip">
       <div className="flex flex-col gap-5">
         <h1 className="text-5xl leading-tight font-coolvetica tracking-wide">
           handmade,
@@ -16,18 +16,29 @@ const Header = () => {
           is made with the finest ingredients and a dedication to quality.
           Explore our menu and taste the difference of handmade goodness today.
         </p>
-        <button className="bg-primary text-white py-3 px-6 rounded-full mt-5 sm:w-40">
+        <button className="bg-primary py-3 px-6 rounded-md text-darkgrey mt-5 sm:w-40">
           Explore Menu
         </button>
       </div>
-      <div className="bg-black sm:rounded-l-full sm:-mt-28 sm:-mr-7 overflow-hidden flex justify-center items-center border-[12px] border-primary">
-        <video
-          className="h-screen w-full object-cover"
-          src="https://res.cloudinary.com/dlahz5ciz/video/upload/v1712821455/bakingvideo_ouzxfr.mp4"
-          autoPlay
-          loop
-          muted
-        ></video>
+      <div className="relative">
+        <div className="bg-black sm:-mt-5  overflow-hidden flex justify-center items-center border-[12px] border-white h-[50vh] w-3/4">
+          <video
+            className="h-[50vh] w-full object-cover"
+            src="https://res.cloudinary.com/dlahz5ciz/video/upload/v1712821455/bakingvideo_ouzxfr.mp4"
+            autoPlay
+            loop
+            muted
+          ></video>
+        </div>
+        <div className="bg-black absolute sm:bottom-10 -bottom-10 sm:right-0 -right-6 overflow-hidden flex justify-center items-center border-[12px] border-white h-[50vh] w-3/4">
+          <video
+            className="h-[50vh] w-full object-cover"
+            src="https://res.cloudinary.com/dlahz5ciz/video/upload/v1714324306/5380369-uhd_2160_4096_30fps_yqopso.mp4"
+            autoPlay
+            loop
+            muted
+          ></video>
+        </div>
       </div>
     </div>
   );
