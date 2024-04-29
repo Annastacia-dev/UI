@@ -1,13 +1,13 @@
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-import Items from './components/Items';
+import CustomerFavourites from './components/CustomerFavourites';
 
 function App() {
   return (
     <>
       <Navbar />
       <Header />
-      <Items />
+      <CustomerFavourites />
     </>
   );
 }
