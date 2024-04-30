@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import CustomerFavourites from './components/CustomerFavourites';
+import Order from './components/Order';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Header />
       <CustomerFavourites />
+      <Order />
     </>
   );
 }

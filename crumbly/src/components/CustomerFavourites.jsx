@@ -128,8 +128,9 @@ const CustomerFavourites = () => {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <CiCircleInfo className="text-xl cursor-pointer hover:text-primary"
-                  onClick={() => toggleIngredients(item.id)}
+                  <CiCircleInfo
+                    className="text-xl cursor-pointer hover:text-primary"
+                    onClick={() => toggleIngredients(item.id)}
                   />
                   <p>{item.cal}g</p>
                   <button className="bg-primary text-darkgrey rounded-sm px-4 py-2 hover:bg-secondary hover:text-lightgrey">
@@ -137,7 +138,7 @@ const CustomerFavourites = () => {
                   </button>
                 </div>
                 {showIngredients[item.id] && (
-                  <div className="glass p-4 absolute top-10 rounded-md text-darkgrey">
+                  <div className="glass p-4 absolute top-10 rounded-md text-darkgrey left-1">
                     <p className="font-bold">Ingredients</p>
                     <p>{item.ingredients}</p>
                   </div>
@@ -146,6 +147,11 @@ const CustomerFavourites = () => {
             </div>
           );
         })}
+      </div>
+      <div className="flex justify-center items-center">
+        <button className="bg-primary text-darkgrey rounded-sm px-4 py-2 hover:bg-secondary hover:text-lightgrey  font-bold capitalize">
+          view all
+        </button>
       </div>
     </div>
   );
