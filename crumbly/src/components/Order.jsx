@@ -65,15 +65,20 @@ const Order = () => {
               <p>850g</p>
             </div>
           </div>
-          <div className='flex md:flex-row flex-col justify-between mt-5 gap-5'>
-            <div className='flex flex-col gap-1'>
+          <div className="flex md:flex-row flex-col justify-between mt-5 gap-5">
+            <div className="flex flex-col gap-1">
               <p>Kshs. 3000</p>
-              <p className='font-coolvetica text-2xl tracking-wide capitalize'>big pack*</p>
+              <p className="font-coolvetica text-2xl tracking-wide capitalize">
+                big pack*
+              </p>
             </div>
-            <button className='bg-primary px-4 py-2 text-darkgrey font-medium capitalize rounded-md h-10'>order now</button>
+            <button className="bg-primary px-4 py-2 text-darkgrey font-medium capitalize rounded-md h-10">
+              order now
+            </button>
           </div>
-          <p className='mt-8 text-xs md:w-3/4 leading-6 tracking-wide'>
-            *Please let us know if you have any allergies to anything in our products, and we will make suitable substitutions.
+          <p className="mt-8 text-xs md:w-3/4 leading-6 tracking-wide">
+            *Please let us know if you have any allergies to anything in our
+            products, and we will make suitable substitutions.
           </p>
         </div>
       </div>
