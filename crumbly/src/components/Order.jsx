@@ -24,10 +24,10 @@ const Order = () => {
       <div className="bg-primary/70  rounded-lg grid md:grid-cols-3 gap-10 relative">
         <img
           src="basket.png"
-          className="md:w-[35%] absolute md:-left-20 md:-top-4 -top-32 left-10"
+          className="md:w-[35%] absolute md:-left-20 md:-top-4 -top-32 left-24"
         />
         <div></div>
-        <div className="flex flex-col gap-8 text-black md:mt-0 mt-24 p-5">
+        <div className="flex flex-col gap-8 text-black md:mt-0 mt-44 p-5">
           <h5 className="font-coolvetica uppercase tracking-wide text-2xl">
             can&apos;t decide ?
           </h5>

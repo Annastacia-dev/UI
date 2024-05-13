@@ -9,6 +9,7 @@ const items = [
     price: 100,
     cal: 450,
     ingredients: 'Flour, water, yeast, salt, sesame seeds',
+    status: 'hot!',
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ const items = [
     price: 310,
     cal: 420,
     ingredients: 'Flour, sugar, eggs, milk, butter, chocolate glaze',
+    status: 'new',
   },
   {
     id: 4,
@@ -107,7 +109,7 @@ const CustomerFavourites = () => {
           </p>
         </div>
       </div>
-      <div className="grid sm:grid-cols-4 gap-4">
+      <div className="grid sm:grid-cols-4 gap-x-4 gap-y-10 mt-10">
         {items.map((item) => {
           return (
             <div
@@ -120,6 +122,11 @@ const CustomerFavourites = () => {
                   className="w-full h-40 object-cover rounded-lg rounded-b-none"
                 />
               </div>
+              {item.status && (
+                <div className="border-2 border-primary flex justify-center items-center text-primary font-coolvetica text-xs capitalize tracking-wide rounded-full p-5 w-10 h-10 absolute md:-top-10 -top-8 left-2">
+                  {item.status}
+                </div>
+              )}
               <div className="flex justify-between px-4 py-2">
                 <div className="flex flex-col gap-1">
                   <p>Kshs. {item.price}</p>
