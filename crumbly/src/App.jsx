@@ -3,6 +3,7 @@ import Header from './components/Header';
 import CustomerFavourites from './components/CustomerFavourites';
 import Order from './components/Order';
 import History from './components/History';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <CustomerFavourites />
       <Order />
       <History />
+      <Footer />
     </>
   );
 }
