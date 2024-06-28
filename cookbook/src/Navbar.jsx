@@ -23,7 +23,7 @@ const Navbar = () => {
 
       <p className="p-3 font-light">cookbook.</p>
 
-      <button className="bg-secondary/10 hover:bg-secondary/80 hover:text-primary rounded-full py-3 md:px-8 px-5 capitalize font-medium md:text-sm text-xs">
+      <button className="bg-secondary/10 hover:bg-secondary/30 rounded-full py-3 md:px-8 px-5 capitalize font-medium md:text-sm text-xs">
         sign up
       </button>
 
