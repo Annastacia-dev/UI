@@ -67,7 +67,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full flex justify-between items-center px-10 py-3 bg-black/90 fixed text-white z-50">
+      <nav className="w-full flex justify-between items-center px-10 py-3 bg-black/90 fixed text-white z-50 backdrop-blur-md">
         <div>
           <p className="font-bold text-lg font-ascent">
             plenish. <sup className="uppercase font-bold text-xs">tm</sup>
@@ -102,7 +102,7 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <nav className="w-full md:flex hidden justify-between items-center px-7  border border-black pt-16 pb-2 bg-white/50 fixed">
+      <nav className="w-full md:flex hidden justify-between items-center px-7  border border-black pt-16 pb-2 bg-white/50 fixed z-10 backdrop-blur-md ">
         <ul className="flex items-center gap-3 capitalize font-medium text-sm">
           {menuItems.map((item, menuIndex) => (
             <div
@@ -122,7 +122,7 @@ const Navbar = () => {
               {item?.items && hoveredMenuItem === item.title && (
                 <div
                   id={`submenu-${menuIndex}`}
-                  className={`absolute top-8 mt-2 bg-black/80 text-white border border-black rounded px-4 py-3 grid grid-cols-3 gap-2 min-w-[50vw] ${menuIndex > 5 ? "right-0" : ""}`}
+                  className={`absolute top-8 mt-2 bg-white z-50 text-black rounded px-4 py-3 grid grid-cols-3 gap-2 min-w-[60vw] ${menuIndex > 5 ? "right-0" : ""}`}
                   onMouseEnter={() => handleMouseEnter(item.title, index)}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -134,7 +134,7 @@ const Navbar = () => {
                       >
                         {subItem.title}
                       </a>
-                      <div className="px-1 text-gray-300 flex flex-col gap-1">
+                      <div className="px-1 text-gray-800 flex flex-col gap-1">
                         {subItem?.items &&
                           subItem.items.map((innerItem, innerIndex) => (
                             <a
