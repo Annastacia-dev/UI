@@ -2,11 +2,10 @@ import { useState, useEffect } from "react";
 
 const Header = () => {
   const images = [
-    "/sofa.jpg",
-    "/dining.jpg",
-    "/office.jpg",
-    "/room.jpg",
-    "/room2.jpg",
+    "/dining.webp",
+    "/office.webp",
+    "/room.webp",
+    "/room2.webp",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
