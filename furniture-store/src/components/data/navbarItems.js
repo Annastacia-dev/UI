@@ -1,6 +1,8 @@
 export const menuItems = [
   {
     title: "office",
+    path: "/office",
+    image: "/office.webp",
     items: [
       { title: "executive desks", path: "/office/executive-desks" },
       { title: "reception counters", path: "/office/reception-counters" },
@@ -35,6 +37,7 @@ export const menuItems = [
   {
     title: "home office",
     path: "/home-office",
+    image: "/home-office.webp",
     items: [
       { title: "study desks", path: "/home-office/study-desks" },
       { title: "display shelves", path: "/home-office/display-shelves" },
@@ -43,6 +46,8 @@ export const menuItems = [
   },
   {
     title: "living room",
+    path: "/living-room",
+    image: "/room.webp",
     items: [
       { title: "accent chairs", path: "/office/accent-chairs" },
       { title: "coffee & end tables", path: "/office/coffee-and-end-tables" },
@@ -108,6 +113,7 @@ export const menuItems = [
   },
   {
     title: "dining",
+    image: "/dining.webp",
     items: [
       { title: "dining packages", path: "/dining/dining-packages" },
       { title: "dining sets", path: "/dining/dining-sets" },
@@ -119,6 +125,7 @@ export const menuItems = [
   {
     title: "storage",
     path: "/storage",
+    image: "/storage.webp",
     items: [
       { title: "shoe cabinets", path: "/storage/shoe-cabinets" },
       { title: "storage cabinets", path: "/storage/storage-cabinets" },
@@ -128,6 +135,7 @@ export const menuItems = [
   {
     title: "bedroom",
     path: "/bedroom",
+    image: "/bedroom.webp",
     items: [
       { title: "bedroom packages", path: "/bedroom/bedroom-packages" },
       { title: "king beds", path: "/bedroom/king-beds" },
@@ -143,6 +151,7 @@ export const menuItems = [
   {
     title: "mattress & pillows",
     path: "/mattress-and-pillows",
+    image: "/mattress.webp",
     items: [
       {
         title: "single size mattresses",
@@ -162,6 +171,7 @@ export const menuItems = [
   {
     title: "kids room",
     path: "/kids-room",
+    image: "/kids-room.webp",
     items: [
       { title: "beds", path: "/kids-room/beds" },
       { title: "kids nightstand", path: "/kids-room/kids-nightstand" },
@@ -177,6 +187,7 @@ export const menuItems = [
   {
     title: "soft furnishings",
     path: "/soft-furnishings",
+    image: "/soft-furnishings.webp",
     items: [
       {
         title: "duvets",
@@ -279,6 +290,7 @@ export const menuItems = [
   {
     title: "home decor",
     path: "/home-decor",
+    image: "/home-decor.webp",
     items: [
       { title: "home decor", path: "/home-decor/home-decor" },
       { title: "carpets + rugs", path: "/home-decor/carpets-and-rugs" },
@@ -320,6 +332,7 @@ export const menuItems = [
   {
     title: "outdoor",
     path: "/outdoor",
+    image: "/outdoor.webp",
     items: [
       { title: "outdoor dining", path: "/outdoor/outdoor-dining" },
       { title: "outdoor sofas", path: "/outdoor/outdoor-sofas" },
