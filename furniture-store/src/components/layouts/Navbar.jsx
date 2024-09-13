@@ -8,8 +8,9 @@ import {
   FaYoutube,
   FaArrowRightLong,
 } from "react-icons/fa6";
-
+import { LuMenu } from "react-icons/lu";
 import { menuItems } from "../data/navbarItems";
+import MobileNav from "./MobileNav";
 
 const storeIcons = [
   {
@@ -49,14 +50,17 @@ const socials = [
 
 const Navbar = () => {
   const [hoveredMenuItem, setHoveredMenuItem] = useState(null);
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+  const toggleMobileNav = () => setIsMobileNavOpen(!isMobileNavOpen);
+
   const hoverTimeoutRef = useRef(null);
 
-  const handleMouseEnter = (itemTitle, index) => {
+  const handleMouseEnter = (itemTitle) => {
     if (hoverTimeoutRef.current) {
       clearTimeout(hoverTimeoutRef.current);
     }
     setHoveredMenuItem(itemTitle);
-    adjustSubmenuPosition(index);
   };
 
   const handleMouseLeave = () => {
@@ -67,24 +71,27 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full flex justify-between items-center px-10 py-3 bg-black/90 fixed text-white z-50 backdrop-blur-md">
-        <div>
-          <p className="font-bold text-lg font-ascent">
-            plenish. <sup className="uppercase font-bold text-xs">tm</sup>
-          </p>
-        </div>
+      <nav className="w-full flex justify-between items-center md:px-10 px-4 py-3 bg-black/90 fixed text-white z-50 backdrop-blur-md">
+        <LuMenu
+          className="md:hidden flex text-xl cursor-pointer"
+          onClick={toggleMobileNav}
+        />
 
-        <ul className="flex gap-6 items-center">
+        <p className="font-bold text-lg font-ascent">
+          plenish. <sup className="uppercase font-bold text-xs">tm</sup>
+        </p>
+
+        <ul className="flex md:gap-6 gap-3 items-center">
           {storeIcons.map((store, index) => (
             <div key={index} className="relative">
-              <a className="text-lg" href={store.path}>
+              <a className="md:text-lg" href={store.path}>
                 {store.icon}
               </a>
             </div>
           ))}
         </ul>
 
-        <ul className="md:flex hidden gap-4 items-center text-sm">
+        <ul className="md:flex hidden md:gap-4 gap-2 items-center text-sm">
           <a href="mailto:sales@plenish.com">sales@plenish.com</a>
           <span>|</span>
           <a href="tel:076837249">+254 768 372 439</a>
@@ -94,7 +101,7 @@ const Navbar = () => {
               key={index}
               href={social.path}
               target="_blank"
-              className="text-lg"
+              className="md:text-lg text-xs"
             >
               {social.icon}
             </a>
@@ -123,7 +130,7 @@ const Navbar = () => {
                 <div
                   id={`submenu-${menuIndex}`}
                   className={`absolute top-8 mt-2 bg-white z-50 text-black rounded px-4 ${item.items.length > 6 ? "grid-cols-3" : "grid-cols-1"} py-3 grid  gap-2 min-w-[50vw] ${menuIndex > 5 ? "right-0" : ""}`}
-                  onMouseEnter={() => handleMouseEnter(item.title, index)}
+                  onMouseEnter={() => handleMouseEnter(item.title)}
                   onMouseLeave={handleMouseLeave}
                 >
                   {item.items.map((subItem, subIndex) => (
@@ -154,6 +161,12 @@ const Navbar = () => {
           ))}
         </ul>
       </nav>
+
+      <MobileNav
+        isMobileNavOpen={isMobileNavOpen}
+        toggleMobileNav={toggleMobileNav}
+        socials={socials}
+      />
     </>
   );
 };

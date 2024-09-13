@@ -40,7 +40,7 @@ const Header = () => {
       className="min-h-screen bg-cover bg-fixed bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
     >
-      <div className="min-h-screen md:bg-gradient-to-r bg-gradient-to-b from-gray-50 via-gray-50/80 to-transparent pt-32 pb-12 px-10">
+      <div className="min-h-screen md:bg-gradient-to-r bg-gradient-to-b from-gray-50 via-gray-50/80 to-transparent pt-20 md:pt-40 pb-12 md:px-10 px-5">
         <div className="md:w-1/2 flex flex-col gap-8">
           <h1 className="md:text-7xl text-5xl font-semibold">
             where comfort <br /> meets style.
@@ -61,9 +61,17 @@ const Header = () => {
 
         <div className="grid md:grid-cols-4 gap-4 mt-10 absolute">
           {highlightedItems.map((item) => (
-            <a href={item.path} className="relative hover:scale-105" key={item.id}>
-              <img src={item.image} className="rounded w-full h-48 object-cover" alt={item.title} />
-              <div className="absolute inset-0 bg-white opacity-40"></div>
+            <a
+              href={item.path}
+              className="relative hover:scale-105"
+              key={item.title}
+            >
+              <img
+                src={item.image}
+                className="rounded w-full h-48 object-cover"
+                alt={item.title}
+              />
+              <div className="absolute inset-0 bg-white opacity-20"></div>
               <p className="flex items-center gap-1 absolute top-2 left-3 text-black capitalize font-semibold text-xs">
                 {item.title} <FaArrowRightLong />
               </p>
