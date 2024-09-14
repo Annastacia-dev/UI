@@ -73,7 +73,7 @@ const Reviews = () => {
                   >
                     <p className="italic text-sm">{quote}</p>
                     <p className="mt-2 font-bold text-sm">~{name}</p>
-                    <p className="text-yellow-600">{"★".repeat(rating)}</p>
+                    <p className="text-yellow-500">{"★".repeat(rating)}</p>
                   </div>
                 ),
               )}
