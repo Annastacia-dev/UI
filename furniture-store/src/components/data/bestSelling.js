@@ -95,4 +95,37 @@ export const bestSellers = [
     path: "/lili-rattan-peacock-chair.jpeg",
     price: 22000,
   },
+  {
+    image: "/furniture/bean-chair.jpeg",
+  },
+  {
+    image: "/furniture/boho-bed.jpeg",
+  },
+  {
+    image: "/furniture/chair-stool.jpeg",
+  },
+  {
+    image: "/furniture/decor-mirror.jpeg",
+  },
+  {
+    image: "/furniture/decor.jpeg",
+  },
+  {
+    image: "/furniture/green-couch.jpeg",
+  },
+  {
+    image: "/furniture/green-mirror.jpeg",
+  },
+  {
+    image: "/furniture/lego-shelf.jpeg",
+  },
+  {
+    image: "/furniture/mushroom-chair.jpeg",
+  },
+  {
+    image: "/furniture/outline-chairs.jpeg",
+  },
+  {
+    image: "/furniture/round-shelf.jpeg",
+  },
 ];

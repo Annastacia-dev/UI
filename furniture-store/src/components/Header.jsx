@@ -59,7 +59,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-4 md:mt-24 mt-10 absolute">
+        <div className="md:grid md:grid-cols-4 flex flex-col justify-center items-center gap-4 md:mt-24 mt-10 absolute">
           {highlightedItems.map((item) => (
             <a
               href={item.path}

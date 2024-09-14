@@ -65,16 +65,18 @@ const Reviews = () => {
                 whiteSpace: "break",
               }}
             >
-              {[...row, ...row, ...row].map(({ name, quote, rating }, index) => (
-                <div
-                  key={index}
-                  className="p-4 flex flex-col gap-2 bg-gray-100 mx-2 rounded shadow-lg w-60"
-                >
-                  <p className="italic text-sm">{quote}</p>
-                  <p className="mt-2 font-bold text-sm">~{name}</p>
-                  <p className="text-yellow-600">{"★".repeat(rating)}</p>
-                </div>
-              ))}
+              {[...row, ...row, ...row].map(
+                ({ name, quote, rating }, index) => (
+                  <div
+                    key={index}
+                    className="p-4 flex flex-col gap-2 bg-gray-100 mx-2 rounded shadow-lg w-60"
+                  >
+                    <p className="italic text-sm">{quote}</p>
+                    <p className="mt-2 font-bold text-sm">~{name}</p>
+                    <p className="text-yellow-600">{"★".repeat(rating)}</p>
+                  </div>
+                ),
+              )}
             </div>
           </div>
         ))}
