@@ -1,10 +1,10 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 import { IoCloseSharp } from 'react-icons/io5';
 
 const SignUp = ({ isSignUpOpen, setIsSignUpOpen }) => {
   return (
     isSignUpOpen && (
-      <div className="flex-col flex fixed bg-tertiary/80 gap-2 left-[70%] right-4 rounded rounded-l-none min-h-[85vh] text-black z-50 mt-[60px]">
+      <div className="flex-col flex fixed bg-tertiary/80 backdrop-blur-md gap-2 md:left-[70%] right-4 rounded rounded-l-none min-h-[85vh] text-black z-50 mt-[60px]">
         <div className="flex justify-between pt-5 px-5 ">
           <h5 className="font-medium  uppercase text-sm"> Join Cookbook </h5>
           <IoCloseSharp
