@@ -4,7 +4,7 @@ import BestSelling from "./BestSelling";
 import Reviews from "./Reviews";
 import Gallery from "./Gallery";
 import Blog from "./Blog";
-import Footer from "./Footer";
+import Footer from "./layouts/Footer";
 
 const LandingPage = () => {
   return (
