@@ -48,8 +48,8 @@ const resources = [
 const Footer = () => {
   return (
     <div className="md:px-10 px-4 py-10 mt-10 bg-black text-white">
-      <div className="grid md:grid-cols-3">
-        <div className="flex gap-16 flex-col">
+      <div className="grid md:grid-cols-3 md:justify-start justify-center md:gap-0 gap-12">
+        <div className="flex md:gap-16 gap-8 flex-col">
           <h4 className="font-semibold capitalize">contact us</h4>
           <ul className="flex flex-col gap-6 text-sm border-t border-black">
             <a
@@ -124,10 +124,11 @@ const Footer = () => {
 
       <hr className="md:flex hidden my-8" />
 
-      <div className="flex justify-between">
+      <div className="flex md:flex-row flex-col md:gap-0 gap-6  md:justify-between justify-center md:mt-0 mt-8 md:ml-0 ml-10">
         <p className="text-[10px]">
-          Website is for purposes of showcase. I don&apos;t own rights to the
-          images & products are not real*
+          Website is for purposes of showcase.
+          <br className="md:hidden" />I don&apos;t own rights to the images &
+          products are not real*
         </p>
         <p className="text-sm">
           Developed by{" "}

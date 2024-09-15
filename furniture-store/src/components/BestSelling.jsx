@@ -25,7 +25,7 @@ const BestSelling = () => {
   };
 
   return (
-    <div className="flex flex-col gap-10 md:pt-40 md:px-10 px-5 pt-[38em]">
+    <div className="flex flex-col gap-10 md:pt-40 md:px-10 px-5 pt-[24em]">
       <div className="flex items-center gap-4">
         <hr className="border border-black md:w-1/2 w-1/3" />
         <h4 className="font-bold md:text-3xl text-xl capitalize">
@@ -38,7 +38,7 @@ const BestSelling = () => {
             <a href={product.path} className="flex flex-col gap-3">
               <img
                 src={product.image}
-                className="w-full md:h-60 h-48 object-cover rounded hover:scale-95"
+                className="w-full md:h-60 object-cover rounded hover:scale-95"
               />
               <h5 className="font-semibold">{product.title}</h5>
               <p className="text-xs font-light leading-5">

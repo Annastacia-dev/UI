@@ -31,7 +31,7 @@ const blogs = [
 
 const Blog = () => {
   return (
-    <div className="flex flex-col gap-10 md:pt-20 md:px-10 px-5 pt-5">
+    <div className="flex flex-col gap-10 md:pt-20 md:px-10 px-5 pt-10">
       <div className="flex items-center gap-4">
         <hr className="border border-black md:w-1/2 w-1/3" />
         <h4 className="font-bold md:text-3xl text-xl capitalize">Our Blog</h4>
