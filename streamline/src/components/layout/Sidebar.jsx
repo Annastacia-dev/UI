@@ -73,7 +73,7 @@ const Sidebar = ({ collapsed, toggleCollapsed }) => {
       <div className="absolute bottom-8 flex flex-col gap-2">
         <div
           href="/settings"
-          className={`flex items-center gap-2 text-lg cursor-pointer px-4 py-2 hover:bg-slate-100 ${activeItem == 'settings' && 'bg-slate-100 border-r-4 border-slate-500'}`}
+          className={`flex items-center gap-2 text-lg cursor-pointer px-4 py-2 ${ collapsed ? 'w-12' :'w-36'} hover:bg-slate-100 ${activeItem == 'settings' && 'bg-slate-100 border-r-4 border-slate-500'}`}
             onClick={() => setActiveItem('settings')}
         >
           <IoSettings />

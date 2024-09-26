@@ -58,7 +58,7 @@ const TopNav = ({ collapsed }) => {
 
   return (
     <nav
-      className={`bg-slate-50 py-5 px-10 rounded ${collapsed ? 'ml-12' : 'ml-36'} flex justify-between text-sm rounded`}
+      className={`bg-slate-50 p-5 rounded ${collapsed ? 'ml-12' : 'ml-36'} flex justify-between text-sm rounded`}
     >
       <h5 className="capitalize font-semibold">{greeting()}, james</h5>
       <div className="flex items-center gap-10">
