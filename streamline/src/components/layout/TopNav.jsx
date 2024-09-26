@@ -3,14 +3,17 @@ import { useState, useRef } from 'react';
 import { FaCaretUp, FaCaretDown } from 'react-icons/fa';
 import { MdNotifications } from 'react-icons/md';
 import { IoSearch } from 'react-icons/io5';
+import { FaPlus } from 'react-icons/fa6';
 
 const TopNav = ({ collapsed }) => {
   const [showSearch, setShowSearch] = useState(false);
   const [showNotifications, setShowNotifications] = useState(false);
-  const [showProfileMenu, setShowProfileMenu] = useState(false); // State for profile dropdown
+  const [showProfileMenu, setShowProfileMenu] = useState(false);
+  const [showNewMenu, setShowNewMenu] = useState(false);
 
-  const notificationRef = useRef(null); // Ref to track the notification dropdown
-  const profileRef = useRef(null); // Ref to track the profile dropdown
+  const notificationRef = useRef(null);
+  const profileRef = useRef(null);
+  const menuRef = useRef(null);
 
   const notifications = [
     {
@@ -30,37 +33,51 @@ const TopNav = ({ collapsed }) => {
     },
   ];
 
-  // Function to hide notification when mouse leaves both bell and dropdown
   const handleNotificationMouseLeave = (event) => {
     if (!notificationRef.current.contains(event.relatedTarget)) {
       setShowNotifications(false);
     }
   };
 
-  // Function to hide profile menu when mouse leaves both profile button and dropdown
   const handleProfileMouseLeave = (event) => {
     if (!profileRef.current.contains(event.relatedTarget)) {
       setShowProfileMenu(false);
     }
   };
 
-  const greeting = () => {
-    const now = new Date();
-    const hour = now.getHours();
-    if (hour < 12) {
-      return 'Good Morning';
-    } else if (hour < 18) {
-      return 'Good Afternoon';
-    } else {
-      return 'Good Evening';
+  const handleMenuMouseLeave = (event) => {
+    if (!menuRef.current.contains(event.relatedTarget)) {
+      setShowNewMenu(false);
     }
   };
 
   return (
     <nav
-      className={`bg-slate-50 p-5 rounded ${collapsed ? 'ml-12' : 'ml-36'} flex justify-between text-sm rounded`}
+      className={`bg-slate-50 px-10 pt-7 rounded ${collapsed ? 'ml-12' : 'ml-36'} flex justify-between text-sm rounded`}
     >
-      <h5 className="capitalize font-semibold">{greeting()}, james</h5>
+      <button
+        className="capitalize font-semibold px-4 py-2 bg-slate-100 flex items-center gap-2 relative"
+        onMouseEnter={() => setShowNewMenu(true)}
+        onMouseLeave={handleMenuMouseLeave}
+      >
+        <FaPlus />
+        <span>new</span>
+        {showNewMenu ? <FaCaretUp /> : <FaCaretDown />}
+
+        {showNewMenu && (
+          <div
+            ref={menuRef}
+            className="absolute top-10 left-0 border border-slate-100 bg-slate-50 shadow-md md:w-[20vw] rounded z-50"
+            onMouseLeave={handleMenuMouseLeave}
+          >
+            <ul className="text-sm p-2 font-normal text-left">
+              <li className="p-2 hover:bg-gray-100 cursor-pointer">Project</li>
+              <hr className="my-2" />
+              <li className="p-2 hover:bg-gray-100 cursor-pointer">Invoice</li>
+            </ul>
+          </div>
+        )}
+      </button>
       <div className="flex items-center gap-10">
         <div className="relative">
           {showSearch && (
@@ -101,7 +118,7 @@ const TopNav = ({ collapsed }) => {
                     key={index}
                     className={`p-2 flex flex-col gap-2 cursor-pointer hover:bg-slate-100 ${notification.read ? '' : 'bg-slate-100/80'}`}
                   >
-                    <strong>{notification.title}</strong>
+                    <p className="font-medium">{notification.title}</p>
                     <p>{notification.content}</p>
                   </li>
                 ))}
