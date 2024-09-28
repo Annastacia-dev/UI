@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { IoIosAdd } from 'react-icons/io';
 import { MdDelete } from 'react-icons/md';
 
@@ -71,13 +71,13 @@ const ToDoList = () => {
   };
 
   return (
-    <div className="min-h-[18rem] bg-slate-100 rounded text-sm relative">
+    <div className="h-[18rem] bg-slate-100 rounded text-sm relative">
       <h5 className="text-center pt-2 font-semibold capitalize p-2">
         to do list
       </h5>
       <hr className="border-1 border-slate-300" />
 
-      <div className="flex flex-col gap-4 mt-4 p-2">
+      <div className="flex flex-col gap-4 mt-4 p-2 scrollbar-thin overflow-y-scroll scrollbar-thumb-slate-500 scrollbar-track-slate-100 h-40">
         {toDoList.map((todo, index) => (
           <div
             key={index}
@@ -92,7 +92,7 @@ const ToDoList = () => {
 
             {editingTask === index ? (
               <input
-                className="px-2 py-1 border-b border-slate-800 bg-transparent"
+                className="px-2 py-1 border-b border-slate-800 bg-slate-100"
                 value={editText}
                 onChange={(e) => setEditText(e.target.value)}
                 onKeyDown={(e) => handleEditTask(index, e)}
@@ -117,7 +117,7 @@ const ToDoList = () => {
 
         <div className="absolute bottom-2 left-0 right-0 flex items-center gap-2 p-2">
           <input
-            className="px-4 py-2 border border-slate-800 rounded bg-transparent w-full text-xs"
+            className="px-4 py-2 border border-slate-800 rounded bg-slate-100 w-full text-xs"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
             onKeyDown={handleNewTaskKeyPress} // Add task on Enter key press

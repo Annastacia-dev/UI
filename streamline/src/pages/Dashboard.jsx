@@ -1,4 +1,5 @@
 import ToDoList from '../components/dashboard/ToDoList';
+import Calendar from '../components/dashboard/Calendar';
 
 const currentProjects = [
   {
@@ -24,27 +25,9 @@ const currentProjects = [
   },
 ];
 
-const daysDifference = (dateStr) => {
-  const date = new Date(dateStr);
-  const today = new Date();
-  const timeDifference = date.getTime() - today.getTime();
-  return Math.ceil(timeDifference / (1000 * 3600 * 24));
-};
-
-const priority = (time) => {
-  switch (true) {
-    case time < 7:
-      return 'high';
-    case time >= 7 && time < 14:
-      return 'medium';
-    default:
-      return 'low';
-  }
-};
-
 const Dashboard = () => {
   return (
-    <div className="grid grid-cols-7 gap-2 mt-5 text-sm">
+    <div className="grid grid-cols-7 gap-2 mt-3 text-sm">
       <div className="col-span-5">
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-3 gap-2">
@@ -60,7 +43,7 @@ const Dashboard = () => {
       </div>
       <div className="col-span-2 flex flex-col gap-2">
         <ToDoList />
-        <div className="min-h-60 bg-slate-100 rounded"></div>
+        <Calendar />
       </div>
     </div>
   );
