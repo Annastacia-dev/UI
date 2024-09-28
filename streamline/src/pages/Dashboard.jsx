@@ -1,6 +1,4 @@
-// import { FaPaperclip, FaCalendar } from 'react-icons/fa';
-// import { MdOutlineStickyNote2 } from "react-icons/md";
-// import { MdLowPriority } from "react-icons/md";
+import ToDoList from '../components/dashboard/ToDoList';
 
 const currentProjects = [
   {
@@ -54,41 +52,15 @@ const Dashboard = () => {
               <div
                 key={project.title}
                 className="border border-slate-100 bg-slate-100/80 rounded p-3 flex flex-col gap-4 relative min-h-40"
-              >
-                {/* <h5 className="font-semibold">{project.title}</h5>
-
-                <div className='flex items-center gap-2 text-[9px]'>
-                  <p className={`flex items-center gap-2 py-1 px-3 font-medium text-center  border rounded capitalize ${daysDifference(project.deadline) < 7 ? 'bg-red-600 text-white': 'border-slate-700'}`}>
-                    <MdLowPriority />
-                    { priority(daysDifference(project.deadline))}
-                  </p>
-
-                  <p className={`flex items-center gap-2 py-1 px-3 font-medium text-center border rounded ${daysDifference(project.deadline) < 7 ? 'border-red-600 text-red-600': 'border-slate-700'}`}>
-                    <FaCalendar />
-                    { project.deadline}
-                  </p>
-                </div>
-
-                <div className="w-full bg-slate-200 rounded-full h-1 mt-3">
-                  <div
-                    className={`bg-slate-800 h-1 rounded-full transition-all duration-300`}
-                    style={{ width: `${project.progress}%` }}
-                  />
-                </div>
-
-                <div className="flex gap-2 absolute right-2 bottom-3">
-                  <FaPaperclip className="cursor-pointer text-md" title="Attachments" />
-                  <MdOutlineStickyNote2 className="cursor-pointer text-md" title="Notes" />
-                </div> */}
-              </div>
+              ></div>
             ))}
           </div>
           <div className="min-h-[23rem] bg-slate-100 rounded"></div>
         </div>
       </div>
       <div className="col-span-2 flex flex-col gap-2">
+        <ToDoList />
         <div className="min-h-60 bg-slate-100 rounded"></div>
-        <div className="min-h-[18rem] bg-slate-100 rounded"></div>
       </div>
     </div>
   );

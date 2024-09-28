@@ -105,7 +105,7 @@ const TopNav = ({ collapsed }) => {
           {showNotifications && (
             <div
               ref={notificationRef}
-              className="absolute top-8 right-0 border border-slate-100 bg-slate-50 shadow-md md:w-[25vw] rounded text-sm"
+              className="absolute top-8 right-0 border border-slate-100 bg-slate-50 shadow-md md:w-[25vw] rounded text-sm z-50"
               onMouseLeave={handleNotificationMouseLeave}
             >
               <h4 className="font-medium text-center text-sm mb-2 capitalize p-2">

@@ -62,7 +62,7 @@ const Sidebar = ({ collapsed, toggleCollapsed }) => {
           <a
             href={item.path}
             key={item.title}
-            className={`flex items-center gap-2 text-lg cursor-pointer px-4 py-2 hover:bg-slate-100 ${activeItem == item.path && 'bg-slate-100 border-r-4 border-slate-500'}`}
+            className={`flex items-center gap-2 text-xl cursor-pointer px-4 py-2 hover:bg-slate-100 ${activeItem == item.path && 'bg-slate-100 border-r-4 border-slate-500'}`}
             onClick={() => setActiveItem(item.path)}
           >
             {item.icon}
@@ -78,7 +78,7 @@ const Sidebar = ({ collapsed, toggleCollapsed }) => {
       <div className="absolute bottom-8 flex flex-col gap-2">
         <a
           href="/settings"
-          className={`flex items-center gap-2 text-lg cursor-pointer px-4 py-2 ${collapsed ? 'w-12' : 'w-36'} hover:bg-slate-100 ${activeItem == '/settings' && 'bg-slate-100 border-r-4 border-slate-500'}`}
+          className={`flex items-center gap-2 text-xl cursor-pointer px-4 py-2 ${collapsed ? 'w-12' : 'w-36'} hover:bg-slate-100 ${activeItem == '/settings' && 'bg-slate-100 border-r-4 border-slate-500'}`}
           onClick={() => setActiveItem('/settings')}
         >
           <IoSettings />
